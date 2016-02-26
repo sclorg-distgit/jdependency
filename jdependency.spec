@@ -4,7 +4,7 @@
 
 Name:           %{?scl_prefix}%{pkg_name}
 Version:        0.7
-Release:        10.11%{?dist}
+Release:        10.12%{?dist}
 Summary:        This project provides an API to analyse class dependencies
 License:        ASL 2.0
 URL:            http://github.com/tcurdt/%{pkg_name}
@@ -14,7 +14,7 @@ Source0:        http://github.com/tcurdt/%{pkg_name}/archive/%{pkg_name}-%{versi
 # Upstream uses different version of objectweb-asm than Fedora has.
 Patch0:         %{pkg_name}-asm.patch
 
-BuildRequires:  %{?scl_prefix_java_common}maven-local
+BuildRequires:  %{?scl_prefix}maven-local
 BuildRequires:  %{?scl_prefix_java_common}objectweb-asm
 BuildRequires:  %{?scl_prefix_java_common}apache-commons-io
 
@@ -55,6 +55,9 @@ set -e -x
 %doc LICENSE.txt
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 0.7-10.12
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Michal Srb <msrb@redhat.com> - 0.7-10.11
 - maven33 rebuild #2
 
