@@ -3,7 +3,7 @@
 
 Name:           %{?scl_prefix}jdependency
 Version:        1.1
-Release:        2.1%{?dist}
+Release:        2.2%{?dist}
 Summary:        This project provides an API to analyse class dependencies
 License:        ASL 2.0
 URL:            http://github.com/tcurdt/%{pkg_name}
@@ -49,6 +49,9 @@ Summary:        API documentation for %{pkg_name}
 %license LICENSE.txt
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 1.1-2.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 1.1-2.1
 - Automated package import and SCL-ization
 
